@@ -15,39 +15,39 @@ describe('API Routes', () => {
     return client.end();
   });
 
-  const expectedCats = [
+  const expecteddogs = [
     {
       id: expect.any(Number),
-      name: 'Felix',
-      type: 'Tuxedo',
-      url: 'cats/felix.png',
+      name: 'Themer',
+      type: 'German Shepard',
+      url: 'dogs/Themer.png',
       year: 1892,
       lives: 3,
       isSidekick: false
     },
     {
       id: expect.any(Number),
-      name: 'Garfield',
-      type: 'Orange Tabby',
-      url: 'cats/garfield.jpeg',
+      name: 'Sabastion',
+      type: 'Dutch Shepard',
+      url: 'dogs/Sabastion.jpeg',
       year: 1978,
       lives: 7,
       isSidekick: false
     },
     {
       id: expect.any(Number),
-      name: 'Duchess',
-      type: 'Angora',
-      url: 'cats/duchess.jpeg',
+      name: 'Dare',
+      type: 'Huski',
+      url: 'dogs/Dare.jpeg',
       year: 1970,
       lives: 9,
       isSidekick: false
     },
     {
       id: expect.any(Number),
-      name: 'Stimpy',
-      type: 'Manx',
-      url: 'cats/stimpy.jpeg',
+      name: 'Stoner',
+      type: 'Pit Bull',
+      url: 'dogs/Stoner.jpeg',
       year: 1990,
       lives: 1,
       isSidekick: true
@@ -55,62 +55,62 @@ describe('API Routes', () => {
     {
       id: expect.any(Number),
       name: 'Sylvester',
-      type: 'Tuxedo',
-      url: 'cats/sylvester.jpeg',
+      type: 'German Shepard',
+      url: 'dogs/sylvester.jpeg',
       year: 1945,
       lives: 1,
       isSidekick: true
     },
     {
       id: expect.any(Number),
-      name: 'Tigger',
-      type: 'Orange Tabby',
-      url: 'cats/tigger.jpeg',
+      name: 'Velma',
+      type: 'Dutch Shepard',
+      url: 'dogs/Velma.jpeg',
       year: 1928,
       lives: 8,
       isSidekick: false
     },
     {
       id: expect.any(Number),
-      name: 'Hello Kitty',
-      type: 'Angora',
-      url: 'cats/hello-kitty.jpeg',
+      name: 'Smokey',
+      type: 'Huski',
+      url: 'dogs/hello-kitty.jpeg',
       year: 1974,
       lives: 9,
       isSidekick: false
     },
     {
       id: expect.any(Number),
-      name: 'Hobbs',
-      type: 'Orange Tabby',
-      url: 'cats/hobbs.jpeg',
+      name: 'Bingo',
+      type: 'Dutch Shepard',
+      url: 'dogs/Bingo.jpeg',
       year: 1985,
       lives: 6,
       isSidekick: true
     }
   ];
 
-  // If a GET request is made to /api/cats, does:
+  // If a GET request is made to /api/dogs, does:
   // 1) the server respond with status of 200
   // 2) the body match the expected API data?
-  it('GET /api/cats', async () => {
+  it('GET /api/dogs', async () => {
     // act - make the request
-    const response = await request.get('/api/cats');
+    const response = await request.get('/api/dogs');
 
     // was response OK (200)?
     expect(response.status).toBe(200);
 
     // did it return the data we expected?
-    expect(response.body).toEqual(expectedCats);
+    expect(response.body).toEqual(expecteddogs);
 
   });
 
-  // If a GET request is made to /api/cats/:id, does:
+  // If a GET request is made to /api/dogs/:id, does:
   // 1) the server respond with status of 200
   // 2) the body match the expected API data for the cat with that id?
-  test('GET /api/cats/:id', async () => {
-    const response = await request.get('/api/cats/2');
+  test('GET /api/dogs/:id', async () => {
+    const response = await request.get('/api/dogs/2');
     expect(response.status).toBe(200);
-    expect(response.body).toEqual(expectedCats[1]);
+    expect(response.body).toEqual(expecteddogs[1]);
   });
 });
