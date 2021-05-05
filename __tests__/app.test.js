@@ -17,76 +17,73 @@ describe('API Routes', () => {
 
   const expecteddogs = [
     {
-      id: expect.any(Number),
-      name: 'Themer',
-      type: 'German Shepard',
+      id: 1,
+      title: 'Themer',
+      description: 'German Shepard',
       url: 'dogs/Themer.png',
       year: 1892,
-      lives: 3,
-      isSidekick: false
+    
+  
     },
     {
-      id: expect.any(Number),
-      name: 'Sabastion',
-      type: 'Dutch Shepard',
+      id: 2,
+      title: 'Sabastion',
+      description: 'Dutch Shepard',
       url: 'dogs/Sabastion.jpeg',
       year: 1978,
-      lives: 7,
-      isSidekick: false
+  
     },
     {
-      id: expect.any(Number),
-      name: 'Dare',
-      type: 'Huski',
+      id: 3,
+      title: 'Dare',
+      description: 'Huski',
       url: 'dogs/Dare.jpeg',
       year: 1970,
-      lives: 9,
-      isSidekick: false
+  
+    
     },
     {
-      id: expect.any(Number),
-      name: 'Stoner',
-      type: 'Pit Bull',
+      id: 4,
+      title: 'Stoner',
+      description: 'Pit Bull',
       url: 'dogs/Stoner.jpeg',
       year: 1990,
-      lives: 1,
-      isSidekick: true
+  
+   
     },
     {
-      id: expect.any(Number),
-      name: 'Sylvester',
-      type: 'German Shepard',
+      id: 5,
+      title: 'Sylvester',
+      description: 'German Shepard',
       url: 'dogs/sylvester.jpeg',
       year: 1945,
-      lives: 1,
-      isSidekick: true
+  
     },
-    {
-      id: expect.any(Number),
-      name: 'Velma',
-      type: 'Dutch Shepard',
+    {  id: 6,
+      title: 'Velma',
+      description: 'Dutch Shepard',
       url: 'dogs/Velma.jpeg',
       year: 1928,
-      lives: 8,
-      isSidekick: false
+  
+  
     },
     {
-      id: expect.any(Number),
-      name: 'Smokey',
-      type: 'Huski',
+      id: 7,
+      title: 'Smokey',
+      description: 'Huski',
       url: 'dogs/hello-kitty.jpeg',
       year: 1974,
-      lives: 9,
-      isSidekick: false
+  
+  
     },
     {
-      id: expect.any(Number),
-      name: 'Bingo',
-      type: 'Dutch Shepard',
+      id:8,
+      title: 'Bingo',
+      description: 'Dutch Shepard',
       url: 'dogs/Bingo.jpeg',
       year: 1985,
-      lives: 6,
-      isSidekick: true
+  
+  
     }
   ];
 
