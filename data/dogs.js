@@ -33,7 +33,7 @@ const dogs = [
   {
     title: 'Velma',
     description: 'Dutch Shepard',
-    url: 'dogs/Velma.jpeg',
+    url: 'dogs/Velma.png',
     year: 1928,
   },
   {

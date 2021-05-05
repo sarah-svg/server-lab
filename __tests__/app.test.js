@@ -62,7 +62,7 @@ describe('API Routes', () => {
     {  id: 6,
       title: 'Velma',
       description: 'Dutch Shepard',
-      url: 'dogs/Velma.jpeg',
+      url: 'dogs/Velma.png',
       year: 1928,
   
   
